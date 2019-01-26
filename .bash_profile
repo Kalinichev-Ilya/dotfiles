@@ -1,16 +1,13 @@
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 [[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
 
 # Default editor for all
 export EDITOR='vim'
 
-source /Users/ilia/.rvm/scripts/rvm
 PATH=$PATH:$HOME/.rvm/bin
-PATH=$PATH:$HOME/.rvm/gems/ruby-2.4.0/bin
-source ~/.rvm/scripts/rvm
+PATH=$PATH:$HOME/.rvm/gems/ruby-2.6.0/bin
 
-export GOPATH=/Users/ilia/go/
-PATH=$PATH:$GOPATH/bin
+# export GOPATH=/Users/ikzekly/go/
+# PATH=$PATH:$GOPATH/bin
 
 # Add Homebrew `/usr/local/bin` and User `~/bin` to the `$PATH`
 PATH=$PATH:$HOME/usr/local/bin:$PATH
@@ -25,9 +22,9 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
 done
 unset file
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Git branch name
 parse_git_branch() {
@@ -49,4 +46,7 @@ if [ -f ~/.bashrc ]; then
     . ~/.bashrc
 fi
 
-export PATH="$HOME/.cargo/bin:$PATH"
+# export PATH="$HOME/.cargo/bin:$PATH"
+
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
