@@ -12,3 +12,5 @@ alias rusty="rustup run nightly-2016-08-01 ~/.cargo/bin/rusti" # rust repl
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+[[ -s "$HOME/.rvm/scripts/rvm"  ]] && . "$HOME/.rvm/scripts/rvm"
