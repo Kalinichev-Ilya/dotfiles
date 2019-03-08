@@ -18,6 +18,12 @@ export PATH="$PATH:/opt/yarn-v1.13.0/bin"
 export PATH="$PATH:`yarn global bin`"
 export PYTHONPATH="$HOME/code"
 
+PATH=$PATH:$HOME/.rvm/bin
+PATH=$PATH:$HOME/.rvm/gems/ruby-2.6.0/bin
+
+# export GOPATH=/Users/ikzekly/go/
+# PATH=$PATH:$GOPATH/bin
+
 # Add Homebrew `/usr/local/bin` and User `~/bin` to the `$PATH`
 PATH=$PATH:$HOME/usr/local/bin:$PATH
 PATH=$PATH:$HOME/bin:$PATH
@@ -65,3 +71,4 @@ PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
 
 # [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+

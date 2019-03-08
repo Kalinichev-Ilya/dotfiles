@@ -18,4 +18,3 @@ alias use-com='rvm use 2.5.0@compliance'
 export PATH="$PATH:$HOME/.rvm/bin"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-
