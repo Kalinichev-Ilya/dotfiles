@@ -4,13 +4,20 @@
 # Default editor for all
 export EDITOR='vim'
 
-source /Users/ilia/.rvm/scripts/rvm
+source /Users/ponch/.rvm/scripts/rvm
 PATH=$PATH:$HOME/.rvm/bin
 PATH=$PATH:$HOME/.rvm/gems/ruby-2.4.0/bin
 source ~/.rvm/scripts/rvm
 
 export GOPATH=/Users/ilia/go/
 PATH=$PATH:$GOPATH/bin
+
+# RabbitMQ
+export PATH=~/cpay-layout/src/rabbitmq_server-3.7.10/sbin:$PATH
+
+export PATH="$PATH:/opt/yarn-v1.13.0/bin"
+export PATH="$PATH:`yarn global bin`"
+export PYTHONPATH="$HOME/code"
 
 # Add Homebrew `/usr/local/bin` and User `~/bin` to the `$PATH`
 PATH=$PATH:$HOME/usr/local/bin:$PATH
@@ -50,3 +57,10 @@ if [ -f ~/.bashrc ]; then
 fi
 
 export PATH="$HOME/.cargo/bin:$PATH"
+
+export PATH="$HOME/.poetry/bin:$PATH"
+
+# Setting PATH for Python 3.7
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
+export PATH
