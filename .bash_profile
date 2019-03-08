@@ -3,6 +3,21 @@
 # Default editor for all
 export EDITOR='vim'
 
+source /Users/ponch/.rvm/scripts/rvm
+
+PATH=$PATH:$HOME/.rvm/bin
+PATH=$PATH:$HOME/.rvm/gems/ruby-2.6.0/bin
+
+# export GOPATH=/Users/ikzekly/go/
+# PATH=$PATH:$GOPATH/bin
+
+# RabbitMQ
+export PATH=~/cpay-layout/src/rabbitmq_server-3.7.10/sbin:$PATH
+
+export PATH="$PATH:/opt/yarn-v1.13.0/bin"
+export PATH="$PATH:`yarn global bin`"
+export PYTHONPATH="$HOME/code"
+
 PATH=$PATH:$HOME/.rvm/bin
 PATH=$PATH:$HOME/.rvm/gems/ruby-2.6.0/bin
 
@@ -46,7 +61,14 @@ if [ -f ~/.bashrc ]; then
     . ~/.bashrc
 fi
 
+export PATH="$HOME/.poetry/bin:$PATH"
+
+# Setting PATH for Python 3.7
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
+
 # export PATH="$HOME/.cargo/bin:$PATH"
 
 # [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+
